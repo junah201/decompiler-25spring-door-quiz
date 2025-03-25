@@ -1,0 +1,4 @@
+.nexify/
+.env
+*.pyc
+*.pyo
