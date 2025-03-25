@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { useQueryClient } from "react-query";
 
 import { solve } from "@/api/main";
 import { Input } from "@/components/Input";
@@ -16,10 +17,12 @@ export default function Main() {
     formState: { errors, isSubmitting },
   } = useCustomForm({});
 
+  const queryClient = useQueryClient();
+
   const { mutate, isLoading } = useCustomMutation(solve, {
     SuccessRedirect: ROUTE_MAP.ANSWER,
     onSuccess: (res) => {
-      console.log(res);
+      queryClient.setQueryData("password", res.password);
     },
     SuccessMessage: "Correct Answer",
     ErrorMessage: "Wrong Answer",

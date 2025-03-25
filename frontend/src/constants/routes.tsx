@@ -11,4 +11,8 @@ export const MAIN_ROUTES = [
     PATH: ROUTE_MAP.MAIN,
     ELEMENT: Loadable(() => import("@/pages/Main")),
   },
+  {
+    PATH: ROUTE_MAP.ANSWER,
+    ELEMENT: Loadable(() => import("@/pages/Answer")),
+  },
 ];
