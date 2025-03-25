@@ -56,18 +56,23 @@ export default function Main() {
       >
         정답 제출
       </Button>
-      <p className="flex text-sm text-gray-500 gap-2 break-keep">
-        이 사이트의 소스코드는
-        <a
-          href="https://github.com/junah201/decompiler-25spring-door-quiz"
-          target="_blank"
-          className="text-blue-500 hover:underline flex space-x-2"
-        >
-          <span> Github</span>
-        </a>
-        에서 확인할 수 있습니다. 모든 정답을 시도해보는 브루스포스 방식을 제외한
-        어떠한 방식으로 문제를 푸셔도 좋습니다.
-      </p>
+      <div className="flex flex-col break-keep text-sm text-gray-500 ">
+        <p>
+          이 사이트의 소스코드는{" "}
+          <a
+            href="https://github.com/junah201/decompiler-25spring-door-quiz"
+            target="_blank"
+            className="text-blue-500 hover:underline space-x-2"
+          >
+            Github
+          </a>
+          에서 확인할 수 있습니다.
+        </p>
+        <p>
+          모든 정답을 시도해보는 브루스포스 방식을 제외한 어떠한 방식으로 문제를
+          푸셔도 좋습니다.
+        </p>
+      </div>
     </div>
   );
 }
