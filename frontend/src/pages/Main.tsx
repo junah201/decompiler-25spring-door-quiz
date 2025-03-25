@@ -21,8 +21,8 @@ export default function Main() {
     onSuccess: (res) => {
       console.log(res);
     },
-    SuccessMessage: "성공",
-    ErrorMessage: "실패",
+    SuccessMessage: "Correct Answer",
+    ErrorMessage: "Wrong Answer",
   });
 
   return (
