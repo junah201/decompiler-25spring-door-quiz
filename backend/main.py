@@ -6,9 +6,7 @@ from pydantic import BaseModel, Field
 
 
 def cors_middleware(route, event, context, call_next):
-    print("cors_middleware start")
     response = call_next(event, context)
-    print("cors_middleware end")
     response.headers["Access-Control-Allow-Origin"] = "https://decompiler-25spring-door-quiz.junah.dev"
     response.headers["Access-Control-Allow-Methods"] = "*"
     response.headers["Access-Control-Allow-Headers"] = "*"
@@ -28,12 +26,11 @@ class Flags(BaseModel):
 
 
 class SolveResponse(BaseModel):
-    message: str
+    password: str
 
 
 @app.post("/solve")
 def solve(flags: Annotated[Flags, Body()]):
-    print("main functions")
     if flags.flag1 != flag1 or flags.flag2 != flag2:
         return JSONResponse(
             status_code=400,
