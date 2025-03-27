@@ -1,6 +1,8 @@
 import { ExternalLink } from "lucide-react";
 import { useQueryClient } from "react-query";
 
+import Leaderboard from "./Leaderboard";
+
 import { solve } from "@/api/main";
 import { Input } from "@/components/Input";
 import { Button } from "@/components/ui/button";
@@ -56,6 +58,7 @@ export default function Main() {
       >
         정답 제출
       </Button>
+      <Leaderboard />
       <div className="flex flex-col break-keep text-sm text-gray-500 ">
         <p>
           이 사이트의 소스코드는{" "}
