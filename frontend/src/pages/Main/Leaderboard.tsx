@@ -17,7 +17,8 @@ interface LeaderboardEntry {
 
 const leaderboardData: LeaderboardEntry[] = [
   { rank: 1, nickname: "Flag_out", name: "최승림", time: "0:00:15:37" },
-  { rank: 2, nickname: "Soyoon", name: "윤쇼윤", time: "1:00:50:23" },
+  { rank: 2, nickname: "Soyoon", name: "윤소윤", time: "1:00:50:23" },
+  { rank: 2, nickname: "vkdl", name: "안지율", time: "1:22:30:02" },
 ];
 
 export default function Leaderboard() {
