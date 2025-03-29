@@ -19,7 +19,7 @@ const leaderboardData: LeaderboardEntry[] = [
   { rank: 1, nickname: "Flag_out", name: "최승림", time: "0:00:15:37" },
   { rank: 2, nickname: "Soyoon", name: "윤소윤", time: "1:00:50:23" },
   { rank: 3, nickname: "vkdl", name: "안지율", time: "1:22:30:02" },
-  { rank: 4, nickname: "518", name: "김한승", time: "3:17:17:01" },
+  { rank: 4, nickname: "ORG-HK158-RIPE", name: "김한승", time: "3:17:17:01" },
   { rank: 5, nickname: "AS202002", name: "이지헌", time: "3:23:03:24" },
 ];
 
