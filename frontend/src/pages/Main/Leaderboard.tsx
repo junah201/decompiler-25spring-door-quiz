@@ -20,7 +20,7 @@ const leaderboardData: LeaderboardEntry[] = [
   { rank: 2, nickname: "Soyoon", name: "윤소윤", time: "1:00:50:23" },
   { rank: 3, nickname: "vkdl", name: "안지율", time: "1:22:30:02" },
   { rank: 4, nickname: "518", name: "김한승", time: "3:17:17:01" },
-  { rank: 5, nickname: "AS202002", name: "이지헌", time: "3:23:3:24" },
+  { rank: 5, nickname: "AS202002", name: "이지헌", time: "3:23:03:24" },
 ];
 
 export default function Leaderboard() {
